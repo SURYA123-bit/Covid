@@ -26,10 +26,10 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imageView6"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/airplane" />
+                android:layout_height="match_parent"
+                android:src="@drawable/sorethroat" />
         </LinearLayout>
 
         <LinearLayout
@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="DO YO HAVE ANY RECENT INTERNATIONAL TRAVEL HISTORY?"
+                android:text="DO YOU HAVE ANY SYMPTOMS OF SORE THROAT?"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
         </LinearLayout>
     </LinearLayout>
@@ -91,7 +91,7 @@
 
                 <Button
                     android:id="@+id/button"
-                    android:layout_width="290"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="top"
 

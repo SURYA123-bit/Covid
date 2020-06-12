@@ -73,7 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/FEVER" />
+                    app:srcCompat="@drawable/fevernameimage" />
             </LinearLayout>
 
         </LinearLayout>
@@ -94,7 +94,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/COUGH" />
+                    app:srcCompat="@drawable/coughnameimage" />
             </LinearLayout>
 
         </LinearLayout>
@@ -116,7 +116,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/SORE" />
+                    app:srcCompat="@drawable/sorenameimage" />
             </LinearLayout>
 
         </LinearLayout>
@@ -144,7 +144,7 @@
                 android:id="@+id/imageView11"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/TIERD" />
+                app:srcCompat="@drawable/tierdimage" />
         </LinearLayout>
 
         <LinearLayout
@@ -195,10 +195,10 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView14"
+                    android:id="@+id/imageView3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/Breath" />
+                    app:srcCompat="@drawable/breathnameimg" />
             </LinearLayout>
 
             <LinearLayout
@@ -211,7 +211,7 @@
                     android:id="@+id/imageView15"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/Chest" />
+                    app:srcCompat="@drawable/chestnameimage" />
             </LinearLayout>
 
             <LinearLayout

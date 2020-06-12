@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1073228735632",
+    "firebase_url": "https://covidassesment-f8cb4.firebaseio.com",
+    "project_id": "covidassesment-f8cb4",
+    "storage_bucket": "covidassesment-f8cb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073228735632:android:f4778ef9ec80856bc36415",
+        "android_client_info": {
+          "package_name": "com.test.covidassesment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073228735632-nots2d27uina1ck5i1n7h3sopfbnub6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA61tDWK7k5efoRPp-Gb49UAV2XMjQzLcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073228735632-nots2d27uina1ck5i1n7h3sopfbnub6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
