@@ -2,4 +2,12 @@
     <string name="app_name">CovidAssesment</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="question1">DO YOU HAVE ANY RECENT INTERNATIONAL TRAVEL HISTORY?</string>
+    <string name="question2">DO YOU HAVE ANY FEVERISH SYMPTOMS ?</string>
+    <string name="question3">DO YOU HAVE ANY SYMPTOMS OF DRY COUGH ?</string>
+    <string name="question4">DO YOU HAVE ANY SYMPTOMS OF SORE THROAT ?</string>
+    <string name="question5">WDO YOU HAVE ANY SYMPTOMS OF COLD ?</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="safe">YOU ARE SAFE BUT MAINTAIN SOCIAL DISTANCE TO BE PROTECTED</string>
+    <string name="danger">YOU NEED TO BE SCREENED PLEASE CONTACT HELPLINE</string>
 </resources>
