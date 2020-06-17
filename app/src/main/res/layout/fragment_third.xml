@@ -5,14 +5,103 @@
     android:layout_height="match_parent"
     tools:context=".ThirdFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="This is the Third Fragment"
-        android:textColor="@android:color/white"
-        android:textSize="25sp"
-        android:gravity="center"
-        android:background="@android:color/holo_blue_light"/>
+        android:padding="10dp"
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SOME STANDARD PRECAUTIONS :"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="#120101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Hand hygiene"
+            android:textColor="#120101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Use of personal protective equipment (e.g., gloves, gowns, masks)"
+            android:textColor="#120101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Safe injection practices"
+            android:textColor="#120101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Safe handling of potentially contaminated equipment or surfaces in the patient environment."
+            android:textColor="#120101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESPIRATORY HYGIENE PRECAUTIONS"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="#120101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Use of posted signs with instructions and pictures about how to cover your cough and wash your hands."
+            android:textColor="#120101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Avaliability and use of tissues when coughing and sneezing and reminders to dispose of used tissues properly."
+            android:textColor="#120101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Use of a mask for a person who is coughing."
+            android:textColor="#120101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Physical separation of the person with a respiratory infection from others."
+            android:textColor="#120101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Stressing hand hygiene after contact with respiratory secretions."
+            android:textColor="#120101"
+            android:textSize="18sp" />
+    </LinearLayout>
 </FrameLayout>

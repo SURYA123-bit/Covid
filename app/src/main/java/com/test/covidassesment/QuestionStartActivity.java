@@ -1,10 +1,15 @@
 package com.test.covidassesment;
 
+import android.Manifest;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -70,6 +75,12 @@ public class QuestionStartActivity extends AppCompatActivity implements View.OnC
                 fragment = new danger();
                 transit(fragment);
                 next.setText("Medicalhelpline");
+                next.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        navigateToHelpline();
+                    }
+                });
 
             }
             else
@@ -77,9 +88,25 @@ public class QuestionStartActivity extends AppCompatActivity implements View.OnC
                 fragment = new Safe();
                 transit(fragment);
                 next.setText("HOME");
+                next.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+                    }
+                });
             }
 
         }
+    }
+    private void navigateToHelpline() {
+        String number = "4383341844";
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:" + number));
+        if(ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+
+        startActivity(intent);
     }
     void transit(Fragment fragment){
         FragmentManager manager = getSupportFragmentManager();

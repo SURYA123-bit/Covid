@@ -6,13 +6,35 @@
     tools:context=".FirstFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="This is the First Fragment"
-        android:textColor="@android:color/white"
-        android:textSize="25sp"
-        android:gravity="center"
-        android:background="@android:color/holo_blue_dark"/>
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="1. Monitoring children's health and keeping them home from school if they are ill."
+            android:textColor="#120101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:text="2. Encouraging children to ask questions and express their concerns."
+            android:textColor="#120101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:text="3. Coughing or sneezing into a tissue or your elbow and avoid touching your face, eyes, mouth and nose."
+            android:textColor="#120101"
+            android:textSize="18sp" />
+    </LinearLayout>
 
 </FrameLayout>
