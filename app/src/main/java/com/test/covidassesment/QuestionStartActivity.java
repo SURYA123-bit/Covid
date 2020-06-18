@@ -10,11 +10,13 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 public class QuestionStartActivity extends AppCompatActivity implements View.OnClickListener{
+    private static final int REQUEST_PHONE_CALL = 1;
     Button next;
     public static int score = 0;
     Fragment fragment;
@@ -27,6 +29,7 @@ public class QuestionStartActivity extends AppCompatActivity implements View.OnC
         transit(fragment);
         next = findViewById(R.id.nextBtn);
         next.setOnClickListener(this);
+        score=0;
 
     }
     @Override
@@ -95,18 +98,17 @@ public class QuestionStartActivity extends AppCompatActivity implements View.OnC
                     }
                 });
             }
-
         }
     }
     private void navigateToHelpline() {
-        String number = "4383341844";
+        String number = "+18337844397";
         Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse("tel:" + number));
-        if(ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            return;
+        if (ContextCompat.checkSelfPermission(QuestionStartActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(QuestionStartActivity.this, new String[]{Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
+        }else {
+            startActivity(intent);
         }
-
-        startActivity(intent);
     }
     void transit(Fragment fragment){
         FragmentManager manager = getSupportFragmentManager();

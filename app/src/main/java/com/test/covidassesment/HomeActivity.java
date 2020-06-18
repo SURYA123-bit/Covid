@@ -2,6 +2,7 @@ package com.test.covidassesment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import android.Manifest;
 import android.content.Intent;
@@ -16,6 +17,7 @@ import android.widget.ImageView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
+    private static final int REQUEST_PHONE_CALL = 1;
     ImageView profileImage;
     Button btnHelpline;
     ImageButton imgBtnHealthcheck,imgBtnHotspots,imgBtnPrecautions,imgBtnSymptoms;
@@ -67,10 +69,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         String number = "4383341844";
         Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse("tel:" + number));
-        if(ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            return;
-        }
 
-        startActivity(intent);
+        if (ContextCompat.checkSelfPermission(HomeActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(HomeActivity.this, new String[]{Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
+        }else {
+            startActivity(intent);
+        }
     }
 }
